@@ -1,0 +1,95 @@
+use restaurant_db
+
+db.restaurant.insertMany([
+{restaurantId : 1, type : "Bakery", serve : "Italian", score : 80, grade : 9, zipcode : 403204},
+{restaurantId : 2, type : "Chinees", serve : "Italian", score : 70, grade : 8, zipcode : 403208},
+{restaurantId : 3, type : "Indian", serve : "French", score : 88, grade : 9, zipcode : 403201},
+{restaurantId : 4, type : "N-Indian", serve : "Italian", score : 70, grade : 7, zipcode : 403202},
+{restaurantId : 5, type : "Chinees", serve : "French", score : 84, grade : 8, zipcode : 403203},
+{restaurantId : 6, type : "Bakery", serve : "Italian", score : 89, grade : 9, zipcode : 403205}
+]);
+
+restaurant_db> db.restaurant.find().pretty();
+
+restaurant_db> db.restaurant.find({type:"Bakery"});
+
+restaurant_db> db.restaurant.find({serve : {$in:["Italian","French"]}});
+
+restaurant_db> db.restaurant.find({zipcode : 403204},{_id : 0, restaurantId:1, score : 1});
+
+
+moore m/cuh
+//****************************************************************************************************************************************************************
+
+In Java, the Object class is the root of the class hierarchy. All classes in Java inherit directly or indirectly from the Object class.
+
+The Object class defines several methods that are common to all Java classes, including:
+
+equals(Object obj): determines whether two objects are equal
+hashCode(): returns a hash code value for the object
+toString(): returns a string representation of the object
+getClass(): returns the runtime class of the object
+wait(): causes the current thread to wait until another thread notifies it
+notify(): wakes up a single thread that is waiting on the object's monitor
+notifyAll(): wakes up all threads that are waiting on the object's monitor
+In addition to these methods, the Object class also provides methods for cloning an object (clone()), finalization (finalize()), 
+and object comparison (compareTo()), which can be useful in certain situations.
+
+One important use of the Object class is as a parameter type or return type when you want to be able to handle objects of any class. 
+For example, you might use the Object class as a parameter type if you want a method to be able to accept objects of any class:
+
+public void printObject(Object obj) {
+    System.out.println(obj.toString());
+}
+
+
+In this example, the printObject() method takes an Object parameter, which means that it can accept objects of any class. 
+The toString() method is called on the object to get a string representation of the object, which is then printed to the console.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+In summary, the Object class is the root of the class hierarchy in Java and defines several methods that are common to all Java classes. 
+It is often used as a parameter type or return type when you want to be able to handle objects of any class.
+
+
+In Java, the Object class is the root of the class hierarchy. All classes in Java inherit directly or indirectly from the Object class.
+
+The Object class defines several methods that are common to all Java classes, including:
+
+equals(Object obj): determines whether two objects are equal
+hashCode(): returns a hash code value for the object
+toString(): returns a string representation of the object
+getClass(): returns the runtime class of the object
+wait(): causes the current thread to wait until another thread notifies it
+notify(): wakes up a single thread that is waiting on the object's monitor
+notifyAll(): wakes up all threads that are waiting on the object's monitor
+In addition to these methods, the Object class also provides methods for cloning an object (clone()), finalization (finalize()), and object comparison (compareTo()), which can be useful in certain situations.
+
+
+
+
+
+
+class Check{
+	private int[] arr = {12, 13, 41, 21, 5};
+	for(int i =0; i<= arr.length; i++)
+	{
+		if(arr[i] > arr[temp];
+		{
+			arr[temp]=arr[i];
+		}
+	}
+}
